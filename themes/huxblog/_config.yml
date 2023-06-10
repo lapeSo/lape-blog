@@ -5,3 +5,6 @@
 # https://github.com/chriskempson/tomorrow-theme
 # night yilia - https://github.com/litten/hexo-theme-yilia
 highlight_theme: normal
+
+local_search:
+  enable: true

@@ -33,6 +33,13 @@ menu: [
     {title: '标签', path: '/tags/'}
 ]
 
+# 站内搜索
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
 # SNS settings
 # RSS: false
 weibo_username:     lapeSo_
@@ -43,8 +50,6 @@ facebook_username:  Lape So
 # linkedin_username:  
 
 # Build settings
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
 
 # Disqus settings
 disqus_username: lape-blog
