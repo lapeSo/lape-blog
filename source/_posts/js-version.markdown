@@ -5,8 +5,8 @@ date:       2014-09-22
 author:     "Hux"
 header-img: "post-bg-js-version.jpg"
 tags:
-    - 前端开发
-    - JavaScript
+    - 技术
+    - 生活
     - 翻译
 ---
 
