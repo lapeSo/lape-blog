@@ -90,11 +90,11 @@ layout: layout
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
-                <!-- Featured Tags -->
+                <!-- 标签 -->
                 <% if(config['featured-tags']) { %>
                 <section>
                     <!-- no hr -->
-                    <h5><a href="<%= config.root %>tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="<%= config.root %>tags/">标签</a></h5>
                     <div class="tags">
                         <% page.tags.forEach(function(tag){ %>
                         <a class="tag" href="<%= config.root %>tags/#<%= tag.name %>"
@@ -107,7 +107,7 @@ layout: layout
                 <!-- Friends Blog -->
                 <% if(config.friends) { %>
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5>朋友</h5>
                 <ul class="list-inline">
 
                     <% config.friends.forEach(function(friend){ %>

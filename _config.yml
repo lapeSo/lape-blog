@@ -26,12 +26,13 @@ description: ""
 keyword: ""
 
 # Menu
-menu: [
-    {title: '首页', path: '/'},
-    {title: '关于我', path: '/about/'},
-    {title: '归档', path: '/archives/'},
-    {title: '标签', path: '/tags/'}
-]
+menu:
+  [
+    { title: "首页", path: "/" },
+    { title: "关于我", path: "/about/" },
+    { title: "归档", path: "/archives/" },
+    { title: "标签", path: "/tags/" },
+  ]
 
 # 站内搜索
 search:
@@ -42,55 +43,35 @@ search:
 
 # SNS settings
 # RSS: false
-weibo_username:     lapeSo_
-# zhihu_username:     
-github_username:    lapeSO
-# twitter_username:   
-facebook_username:  Lape So
-# linkedin_username:  
+weibo_username: u/5581089340 # 微博 id
+# zhihu_username:
+github_username: lapeSO
+# twitter_username:
+facebook_username: profile.php?id=100091061324064 # facebook 个人主页地址
+# linkedin_username:
 
 # Build settings
 
-# Duoshuo settings
-duoshuo_username: 
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
 # Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "Lape only live twice!"
-sidebar-avatar: img/avatar.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
-
+sidebar-avatar: img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
+featured-tags: true # whether or not using Feature-Tags
+featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
 
 # Friends
-friends: [
-    {
-        title: "Lape's Blog",
-        href: "https://github.com/lapeSo/lape-blog"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
-
+friends:
+  [
+    { title: "Lape's Blog", href: "https://github.com/lapeSo/lape-blog" },
+    { title: "Foo", href: "#" },
+    { title: "Bar", href: "#" },
+    { title: "Example Friends", href: "#" },
+    { title: "It helps SEO", href: "#" },
+  ]
 
 #Custom Setting End
-
 
 # Directory
 source_dir: source
