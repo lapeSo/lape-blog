@@ -4,7 +4,10 @@
 #    normal | night | night yilia | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 # night yilia - https://github.com/litten/hexo-theme-yilia
+
+# 样式类型
 highlight_theme: normal
 
+# 本地搜索
 local_search:
   enable: true

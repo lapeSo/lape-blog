@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "测试周刊"
-date: 2023-06-12
-author: "Lape"
+title: 测试周刊
+author: Lape
 tags:
   - 技术
   - 生活
+abbrlink: 6311
+date: 2023-06-12 00:00:00
 ---
 
 # 科技爱好者周刊：第 94 期

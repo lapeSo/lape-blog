@@ -2,30 +2,30 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-# Site
+# Site 站点
 title: Lape's Blog
 subtitle: To Be A Handsome !
 author: Lape So
 language:
 timezone:
 
-# URL
+# URL 路径配置
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://localhost:4000/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: posts/:abbrlink/
 permalink_defaults:
 
 #Custom Setting Start
 
-# Site settings
+# Site settings 站点信息配置
 SEOTitle: Lape的博客 | Lape's Blog
 header-img: img/home-bg.jpg
 email: lapeso@163.com
 description: ""
 keyword: ""
 
-# Menu
+# Menu 菜单结构
 menu:
   [
     { title: "首页", path: "/" },
@@ -41,6 +41,7 @@ search:
   content: true
   format: html
 
+# 其他主页信息配置
 # SNS settings
 # RSS: false
 weibo_username: u/5581089340 # 微博 id
@@ -50,18 +51,29 @@ github_username: lapeSO
 facebook_username: profile.php?id=100091061324064 # facebook 个人主页地址
 # linkedin_username:
 
-# Build settings
+# Site Map 搜索引擎优化
+# 百度
+baidusitemap:
+  path: baidusitemap.xml
+  # google
+sitemap:
+  path:
+    - sitemap.xml
+    - sitemap.txt
+  rel: false
+  tags: true
+  categories: true
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "Lape only live twice!"
 sidebar-avatar: img/avatar.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
-# Featured Tags
+# Featured Tags 标签
 featured-tags: true # whether or not using Feature-Tags
 featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
 
-# Friends
+# Friends 朋友
 friends:
   [
     { title: "Lape's Blog", href: "https://github.com/lapeSo/lape-blog" },
@@ -73,7 +85,7 @@ friends:
 
 #Custom Setting End
 
-# Directory
+# Directory 目录
 source_dir: source
 public_dir: public
 tag_dir: tags
@@ -83,7 +95,7 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
-# Writing
+# Writing 写作
 new_post_name: :title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -127,3 +139,18 @@ deploy:
   type: git
   repo: https://github.com/lapeSo/lape-blog
   branch: gh-pages
+
+# abbrlink 路径优化
+abbrlink:
+  alg: crc16 #support crc16(default) and crc32
+  rep: dec #support dec(default) and hex
+  drafts: false #(true)Process draft,(false)Do not process draft. false(default)
+  # Generate categories from directory-tree
+  # depth: the max_depth of directory-tree you want to generate, should > 0
+  auto_category:
+    enable: true #true(default)
+    depth: #3(default)
+    over_write: false
+  auto_title: false #enable auto title, it can auto fill the title by path
+  auto_date: false #enable auto date, it can auto fill the date by time today
+  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
