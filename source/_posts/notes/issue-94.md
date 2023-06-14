@@ -3,7 +3,7 @@ layout: post
 title: 测试周刊
 author: Lape
 tags:
-  - 技术
+  - 笔记
   - 生活
 abbrlink: 6311
 date: 2023-06-12 00:00:00

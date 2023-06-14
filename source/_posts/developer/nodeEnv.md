@@ -3,7 +3,7 @@ layout: post
 title: 环境依赖
 author: Lape
 tags:
-  - 技术
+  - 开发者手册
   - node.js
 abbrlink: 7915
 date: 2023-06-13 00:00:00
@@ -14,7 +14,6 @@ date: 2023-06-13 00:00:00
 ## NVM
 
 > node.js版本管理 [NVM](https://github.com/coreybutler/nvm-windows/releases),下载 nvm-setup.zip.
-
 
 ```javascript
 // 国内镜像配置（淘宝）：
@@ -66,9 +65,20 @@ exec('hexo server -p 4000 & ', (error, stdout, stderr) => {
     console.log('stderr: ${stderr}');
 })
 ```
+
 ## Sqlite
 
 >Sqlite 可视化工具，可以在vscode插件库安装
-
 >数据库[下载地址](https://www.sqlite.org/download.html)
 数据库可视化工具[下载地址](https://www.heidisql.com/download.php)
+
+## vscode 插件
+
+```text
+vscode 简体中文： Chinese (Simplified)
+Vue3 语言工具： Vue Language Features
+Tailwind css库工具：Tailwind CSS IntelliSense
+代码规范： ESLint
+vscode 内置服务： Live Server
+代码色彩工具： Prettier - Code formatter
+```
